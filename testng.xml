@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Geidea CrossTest">
+    <test name="Chrome Test">
+        <parameter name="BrowserType" value="Chrome"/>
+        <classes>
+            <class name="WoocomerceTest"/>
+        </classes>
+    </test>
+    <test name="Fox Test">
+        <parameter name="BrowserType" value="FireFox"/>
+        <classes>
+            <class name="WoocomerceTest"/>
+        </classes>
+    </test>
+</suite>
