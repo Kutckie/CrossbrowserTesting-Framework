@@ -1,6 +1,7 @@
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.commons.io.comparator.CompositeFileComparator;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
@@ -9,7 +10,7 @@ import org.testng.annotations.Parameters;
 abstract public class Base {
 
     /**
-     * Startup parameters
+     * Основные параметры
      */
     public void setup(){
         Configuration.driverManagerEnabled = true;
